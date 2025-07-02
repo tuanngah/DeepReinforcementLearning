@@ -1,11 +1,16 @@
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
-from tetris_env import TetrisEnv
-from train_dqn_tetris import QNetwork  # adjust import if QNetwork is in another module
+from tetris_env_2 import TetrisEnv
+
+from train_dqn_tetris import QNetwork  
+from train_double_dqn_tetris import QNetwork
+from train_dueling_dqn_tetris import DuelingQNetwork
+from train_a2c_tetris import ActorCritic
+
 import time
 
-MODEL_PATH = 'dqn_tetris.pth'  # or 'dqn_tetris.pth'
+MODEL_PATH = 'dqn_double_logged_5_new.pth'  
 NUM_EPISODES = 10
 RENDER_DELAY = 0.05  # seconds between frames
 

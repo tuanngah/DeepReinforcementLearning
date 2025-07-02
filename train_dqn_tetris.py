@@ -8,7 +8,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
-from tetris_env import TetrisEnv
+from tetris_env_2 import TetrisEnv
 
 # Use GPU if available
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -77,7 +77,7 @@ def train():
     gamma = 0.98
     lr = 5e-4
     sync_target_steps = 5000
-    max_frames = 500000
+    max_frames = 200000
     epsilon_start, epsilon_final, epsilon_decay = 1.0, 0.1, 100000
 
     env = TetrisEnv()

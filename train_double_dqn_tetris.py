@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
-from tetris_env import TetrisEnv
+from tetris_env_2 import TetrisEnv
 import matplotlib.pyplot as plt
 
 # Device
